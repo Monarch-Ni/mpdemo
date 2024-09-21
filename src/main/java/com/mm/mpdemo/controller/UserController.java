@@ -66,6 +66,7 @@ public class UserController {
     @GetMapping("{id}")
     public UserVO queryUserByIdAndAddress(@ApiParam("用户id") @PathVariable("id") Long id){
         UserVO userVO = userService.queryUserByIdAndAddress(id);
+        System.out.println("a");
         return userVO;
     }
 
