@@ -67,6 +67,7 @@ public class UserController {
     public UserVO queryUserByIdAndAddress(@ApiParam("用户id") @PathVariable("id") Long id){
         UserVO userVO = userService.queryUserByIdAndAddress(id);
         System.out.println("a");
+        System.out.println("b");
         return userVO;
     }
 
