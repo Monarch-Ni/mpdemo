@@ -68,6 +68,7 @@ public class UserController {
         UserVO userVO = userService.queryUserByIdAndAddress(id);
         System.out.println("a");
         System.out.println("b");
+        System.out.println("c");
         return userVO;
     }
 
